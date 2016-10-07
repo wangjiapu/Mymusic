@@ -1,0 +1,49 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!--
+    <TextView
+        android:id="@+id/item_mymusic_postion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/num"
+       android:textColor="#0d0c0c"
+        android:textSize="18sp" /> -->
+    <ImageView
+        android:id="@+id/item_mymusic_postion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/list2"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/item_mymusic_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music"
+            android:textColor="#0d0c0c"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_mymusic_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mymusic_song"
+            android:text="@string/singer"
+            android:textColor="#0d0c0c"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</LinearLayout>

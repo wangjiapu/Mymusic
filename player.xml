@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/pujiawang5"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="@string/hui"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="@string/huanchong"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:id="@+id/textView7" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/background"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:text="@string/geci"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/heihei"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/singger" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="23dp"
+            android:indeterminate="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/songtime"
+            android:layout_below="@+id/seekBar"
+            android:textColor="#ffffff"
+            android:layout_alignLeft="@+id/seekBar"
+            android:layout_alignStart="@+id/seekBar"
+            android:id="@+id/textView2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/songtime"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/seekBar"
+            android:layout_alignRight="@+id/seekBar"
+            android:layout_alignEnd="@+id/seekBar"
+            android:id="@+id/textView3" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shun2"
+            android:layout_below="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:id="@+id/imageView3" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pre2"
+            android:id="@+id/imageView2"
+            android:layout_below="@+id/textView2"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/stop2"
+            android:id="@+id/imageView"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/next2"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/love"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+    </RelativeLayout>
+
+</LinearLayout>
